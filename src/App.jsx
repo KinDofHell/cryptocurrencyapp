@@ -22,14 +22,10 @@ function App() {
           <div className="routes">
             <Routes>
               <Route exact path="/" element={<Homepage />} />
-              <Route
-                exact
-                path="/cryptocurrencies"
-                element={<Cryptocurrencies />}
-              />
-              <Route exact path="/crypto/:coinId" element={<CryptoDetails />} />
-              <Route exact path="/exchanges" element={<Exchanges />} />
-              <Route exact path="/news" element={<News />} />
+              <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
+              <Route path="/crypto/:coinId" element={<CryptoDetails />} />
+              <Route path="/exchanges" element={<Exchanges />} />
+              <Route path="/news" element={<News />} />
             </Routes>
           </div>
         </Layout>
